@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio integrador</title>
+    <style>
+        .grid-area{display: grid; 
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: repeat(4, auto); 
+            grid-template-areas: 
+                "header header header"
+                "sidebar1 contenido sidebar2"
+                "sidebar1 widget sidebar2"
+                "footer footer footer";}
+        .grid-area .header {background: rgb(43, 0, 255); 
+            grid-column-start: header ; 
+            grid-column-end: header ;}
+        .grid-area .sidebar1 {background: cornflowerblue; 
+            grid-column: sidebar1 ; 
+            grid-row: sidebar1 ;}
+        .grid-area .contenido {background: midnightblue; 
+            color: white;
+            grid-area: contenido;}
+        .grid-area .sidebar2 {background: mediumspringgreen; 
+            grid-area: sidebar2; } 
+        .grid-area .widget {background: lightcoral; 
+            grid-area: widget;}
+        .grid-area .footer {background: darkslategray; 
+            grid-area: footer; }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio integrador</h1>
+    </header>
+
+    <div class="grid-area">
+        <div class="header">AGENCIA DE AUTOS ASIATICOS</div>
+        <div class="sidebar1">2</div>
+        <div class="contenido">3</div>
+        <div class="widget">4</div>
+        <div class="sidebar2">5</div>
+        <div class="footer">6</div>
+    </div>
+    
+</body>
+</html>
