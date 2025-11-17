@@ -14,13 +14,13 @@ body {
     height: 8px;
 }
 
-/* Línea blanca */
+
 .linea-blanca {
     background-color: white;
     height: 8px;
 }
 
-/* Línea decorativa */
+
 .linea-decorativa {
     display: flex;
 }
