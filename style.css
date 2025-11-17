@@ -9,6 +9,14 @@ body {
     background-color: #f0f0f0;
 }
 
+.encabezado {
+    background-color: #003d7a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
 .linea-roja {
     background-color: #d32f2f;
     height: 8px;
