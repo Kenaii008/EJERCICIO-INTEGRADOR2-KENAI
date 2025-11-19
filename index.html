@@ -33,6 +33,105 @@
             <p>MAPA DE LOCALIZACION</p>
         </div>
     </div>
+
+    <div class="catalogo">
+        <div class="marca">
+            <img src="imagenes/i/autohonda.jpg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/autonissan.jpeg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/autotoyota.png" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/automazda.jpg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/autohiunday.jpg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/logokia.jpg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/automitsubishi.jpg" alt="" width="250" height="100">
+        </div>
+        <div class="marca">
+            <img src="imagenes/i/autosuzuki.jpg" alt="" width="250" height="100">
+        </div>
+    </div>
+
+    <div class="linea-roja"></div>
+    <footer class="pie-pagina">
+        <p>KENAI ALFEREZ-45778</p>
+    </footer>
+
+    <section>
+        <h2>Cotizacion de vehiculos</h2>
+
+        <form id="formulario-cotizacion">
+            <div class="formulario-grupo">
+                <label for="nombre">
+                    Nombre completo del solicitante:
+                </label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="formulario-grupo">
+                <label for="correo">Correo electrónico de contacto:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="formulario-grupo">
+                <label>Selección del tipo de financiamiento:</label>
+                <div class="radio-grupo">
+                    <label><input type="radio" id="contado" name="financiamiento" value="Contado" required> Contado</label>
+                    <label><input type="radio" id="credito" name="financiamiento" value="Crédito"> Crédito</label>
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label>Adicionales:</label>
+                <div class="checkbox-grupo">
+                <label><input type="checkbox" id="aire">Aire acondicionado</label>
+                <label><input type="checkbox" id="gps">GPS</label>
+                <label><input type="checkbox" id="seguro">Incluir seguro</label>
+                 <label><input type="checkbox" id="quemacocos"> Quemacocos</label>
+                <label><input type="checkbox" id="trasera"> Cámara trasera</label>
+                <label><input type="checkbox" id="frontal"> Cámara frontal</label>
+                </div>
+
+            </div>
+
+             <div class="formulario-grupo">
+                <label for="marca">Selección de la marca del vehículo:</label>
+                <select id="marca" name="marca" required>
+                    <option value="">-- Selecciona una marca --</option>
+                    <option value="HONDA">HONDA</option>
+                    <option value="NISSAN">NISSAN</option>
+                    <option value="TOYOTA">TOYOTA</option>
+                    <option value="MAZDA">MAZDA</option>
+                    <option value="HYUNDAI">HYUNDAI</option>
+                    <option value="KIA">KIA</option>
+                    <option value="MITSUBISHI">MITSUBISHI</option>
+                    <option value="SUZUKI">SUZUKI</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton-envio">Solicitar Cotizacion</button>
+
+        </form>
+
+        <div id="resultado-cotizacion" class="resultado-cotizacion" style="display: none;">
+            <h3>Resumen de cotizacion</h3>
+            <div id="contenido-resultado"></div>
+
+        </div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+
+
     
 </body>
 </html>
